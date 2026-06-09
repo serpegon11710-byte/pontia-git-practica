@@ -1,0 +1,14 @@
+name: Workflow Demo
+on:
+  workflow_dispatch:
+    inputs:
+      texto:
+        description: 'Introduce un texto'
+        required: true
+        default: ''
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Texto introducido
+        run: echo "Texto introducido: ${{ github.event.inputs.texto }}"
