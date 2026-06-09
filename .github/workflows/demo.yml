@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Texto introducido
-        run: echo "Texto introducido: ${{ github.event.inputs.texto }}"
+        run: echo 'Texto introducido: ${{ github.event.inputs.texto }}'
